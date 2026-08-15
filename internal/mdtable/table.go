@@ -213,7 +213,7 @@ func separatorCell(width int, align Alignment) string {
 	case AlignLeft:
 		return ":" + strings.Repeat("-", width-1)
 	case AlignRight:
-		return ":" + strings.Repeat("-", width-1)
+		return strings.Repeat("-", width-1) + ":"
 	case AlignCenter:
 		return ":" + strings.Repeat("-", width-2) + ":"
 	default:
